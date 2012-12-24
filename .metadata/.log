@@ -1,0 +1,512 @@
+!SESSION 2012-12-23 23:49:12.793 -----------------------------------------------
+eclipse.buildId=2.1-M2-20121018-1623-Typesafe
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -data C:\Users\Stranger\workspace_play -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2012-12-23 23:49:25.772
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-23 23:49:25.772
+!MESSAGE A conflict occurred for CTRL+SHIFT+D:
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Display,Display,
+		Display result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.download,Download...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		com.aptana.ide.syncing.ui.handlers.DownloadHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.debug.server,Debug Server,
+		,
+		Category(org.radrails.rails.ui.category,Rails,null,true),
+		org.radrails.rails.internal.ui.commands.DebugServerHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-23 23:49:25.772
+!MESSAGE A conflict occurred for CTRL+SHIFT+U:
+Binding(CTRL+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+U,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.upload,Upload...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		com.aptana.ide.syncing.ui.handlers.UploadHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jdt.core 2 0 2012-12-24 00:13:14.222
+!MESSAGE The Java indexing could not index C:/Users/Stranger/Programs/scalaclipse/configuration/org.eclipse.osgi/bundles/209/1/.cp/lib/scala-library.jar|scala/AnyVal.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.core.resources 4 2 2012-12-24 00:13:14.551
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at org.aspectj.weaver.World$TypeMap.demote(World.java:1081)
+	at org.aspectj.weaver.World$TypeMap.demote(World.java:1059)
+	at org.aspectj.weaver.World.demote(World.java:1765)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1794)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1641)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1404)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1190)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:469)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:320)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:121)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:151)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:245)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:126)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:594)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:562)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:486)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:459)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.jdt.internal.core.JarPackageFragment.createElementInfo(JarPackageFragment.java:162)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JarPackageFragment.storedNonJavaResources(JarPackageFragment.java:206)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getNonJavaResources(JarPackageFragmentRoot.java:169)
+	at scala.tools.eclipse.ClasspathManagement$class.scala$tools$eclipse$ClasspathManagement$$getVersionNumber(ClasspathManagement.scala:331)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:254)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:238)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:743)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:34)
+	at scala.collection.mutable.ArrayOps.foreach(ArrayOps.scala:38)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:742)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:238)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.checkClasspath(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$class.isClasspathValid(ClasspathManagement.scala:180)
+	at scala.tools.eclipse.ScalaProject.isClasspathValid(ScalaProject.scala:80)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:44)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 75 2012-12-24 00:13:14.570
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2012-12-24 00:13:14.570
+!MESSAGE Errors running builder 'Scala Builder' on project 'todolist'.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at org.aspectj.weaver.World$TypeMap.demote(World.java:1081)
+	at org.aspectj.weaver.World$TypeMap.demote(World.java:1059)
+	at org.aspectj.weaver.World.demote(World.java:1765)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1794)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1641)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1404)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1190)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:469)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:320)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:121)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:151)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:245)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:126)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:594)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:562)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:486)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:459)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.jdt.internal.core.JarPackageFragment.createElementInfo(JarPackageFragment.java:162)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JarPackageFragment.storedNonJavaResources(JarPackageFragment.java:206)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getNonJavaResources(JarPackageFragmentRoot.java:169)
+	at scala.tools.eclipse.ClasspathManagement$class.scala$tools$eclipse$ClasspathManagement$$getVersionNumber(ClasspathManagement.scala:331)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:254)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:238)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:743)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:34)
+	at scala.collection.mutable.ArrayOps.foreach(ArrayOps.scala:38)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:742)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:238)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.checkClasspath(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$class.isClasspathValid(ClasspathManagement.scala:180)
+	at scala.tools.eclipse.ScalaProject.isClasspathValid(ScalaProject.scala:80)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:44)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:10.518
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:21.135
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:29.076
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:30.495
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:33.414
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:34.937
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:39.418
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2012-12-24 01:32:42.195
+!MESSAGE Error during askOption
+!STACK 0
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeItem.raiseMissing(CompilerControl.scala:337)
+	at scala.tools.nsc.interactive.CompilerControl$NoWorkScheduler.postWorkItem(CompilerControl.scala:406)
+	at scala.tools.nsc.interactive.CompilerControl$class.postWorkItem(CompilerControl.scala:109)
+	at scala.tools.nsc.interactive.CompilerControl$class.askType(CompilerControl.scala:142)
+	at scala.tools.nsc.interactive.Global.askType(Global.scala:27)
+	at scala.tools.eclipse.ScalaPresentationCompiler.body(ScalaPresentationCompiler.scala:104)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1$$anonfun$1$$anon$1.index(ScalaOccurrencesFinder.scala:34)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesForSymbol$1(MarkOccurrences.scala:23)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:66)
+	at scala.tools.refactoring.implementations.MarkOccurrences$$anonfun$2.apply(MarkOccurrences.scala:32)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:239)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:76)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:239)
+	at scala.collection.immutable.List.flatMap(List.scala:76)
+	at scala.tools.refactoring.implementations.MarkOccurrences.occurrencesOf(MarkOccurrences.scala:32)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:43)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder$$anonfun$findOccurrences$1$$anonfun$apply$1.apply(ScalaOccurrencesFinder.scala:29)
+	at scala.tools.nsc.util.InterruptReq.liftedTree1$1(InterruptReq.scala:26)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:25)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:331)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:02:00.299
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:02:00.311
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.312
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.312
+!MESSAGE Missing requirement: EGit Plug-in Import 2.2.0.201212191850-r (org.eclipse.egit.import 2.2.0.201212191850-r) requires 'bundle org.eclipse.core.runtime [3.8.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:02:00.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.312
+!MESSAGE From: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.312
+!MESSAGE To: org.eclipse.egit.import [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:02:00.345
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:02:00.345
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.345
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.345
+!MESSAGE Missing requirement: EGit Plug-in Import 2.2.0.201212191850-r (org.eclipse.egit.import 2.2.0.201212191850-r) requires 'bundle org.eclipse.core.runtime [3.8.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:02:00.345
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.345
+!MESSAGE From: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:02:00.345
+!MESSAGE To: org.eclipse.egit.import [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:03:03.392
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:03:03.392
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.392
+!MESSAGE Software being installed: Eclipse EGit Mylyn GitHub Feature 2.2.0.201212191850-r (org.eclipse.mylyn.github.feature.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.392
+!MESSAGE Missing requirement: Mylyn GitHub Connector UI 2.2.0.201212191850-r (org.eclipse.mylyn.github.ui 2.2.0.201212191850-r) requires 'bundle org.eclipse.mylyn.tasks.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:03:03.392
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.392
+!MESSAGE From: Eclipse EGit Mylyn GitHub Feature 2.2.0.201212191850-r (org.eclipse.mylyn.github.feature.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.392
+!MESSAGE To: org.eclipse.mylyn.github.ui [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:03:03.396
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:03:03.396
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.396
+!MESSAGE Software being installed: Eclipse EGit Mylyn GitHub Feature 2.2.0.201212191850-r (org.eclipse.mylyn.github.feature.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.396
+!MESSAGE Missing requirement: Mylyn GitHub Connector UI 2.2.0.201212191850-r (org.eclipse.mylyn.github.ui 2.2.0.201212191850-r) requires 'bundle org.eclipse.mylyn.tasks.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:03:03.396
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.396
+!MESSAGE From: Eclipse EGit Mylyn GitHub Feature 2.2.0.201212191850-r (org.eclipse.mylyn.github.feature.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:03:03.396
+!MESSAGE To: org.eclipse.mylyn.github.ui [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:04:24.865
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:24.865
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.865
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.865
+!MESSAGE Missing requirement: EGit Plug-in Import 2.2.0.201212191850-r (org.eclipse.egit.import 2.2.0.201212191850-r) requires 'bundle org.eclipse.core.runtime [3.8.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:24.865
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.865
+!MESSAGE From: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.865
+!MESSAGE To: org.eclipse.egit.import [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:04:24.871
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:24.871
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.871
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.871
+!MESSAGE Missing requirement: EGit Plug-in Import 2.2.0.201212191850-r (org.eclipse.egit.import 2.2.0.201212191850-r) requires 'bundle org.eclipse.core.runtime [3.8.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:24.871
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.871
+!MESSAGE From: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:24.871
+!MESSAGE To: org.eclipse.egit.import [2.2.0.201212191850-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:04:32.737
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:32.737
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:32.737
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:32.737
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-12-24 14:04:32.741
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2012-12-24 14:04:32.741
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:32.741
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2012-12-24 14:04:32.741
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
